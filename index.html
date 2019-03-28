@@ -7,30 +7,43 @@
         <h1>My ToDo Application
         </h1>
         <br>
-        <input>
-        <button type="button">ADD</button>
+        <!-- Im unsure about this action tag which is looking 
+            at an action.php page that I haven't created, also where and how are
+            the choices being made here passed to anywhere-->
+        <form action="/action_page.php">
+        <input type="text" name="Task input box" value="">
+        <input type="submit" value="ADD">
+        </form>
         <br>
-        <br>
+        <p>
+            <b>THINGS TO DO: 2
+            </b>
+        </p>
         <table>
                 <tr>
-                  <th>Things To Do:</th>
-                  <th>2</th> 
+                      <td><b>A FIRST TASK</b></td> 
+                      <!-- As above, how is this working and where is it going?-->
+                        <form action="/action_page.php">
+                      <td><input type="submit" value="DONE"></td> 
+                      </form>
+                      <!-- As above, how is this working - where is it going?-->
+                      <form action="/action_page.php">
+                      <td><input type="submit" value="DELETE"></td>
+                      </form>
                 </tr>
-                
-        </table>
-        <br>
-        <br>
-              <table style="width:50%">
-                    <tr>
-                      <td>A FIRST TASK</td>                    
-                      <td><button type="button">DONE</button></td> 
-                      <td><button type="button">DELETE</button></td>
-                    </tr>
-                    <tr>
-                      <td>A SECOND TASK</td>
-                      <td><button type="button">DONE</button></td>
-                      <td><button type="button">DELETE</button></td>
-                    </tr>
+                <tr>
+                     <b>
+                      <td><b>A SECOND TASK</b></td>
+                      <!-- As above, how is this working and where is it going?-->
+                      <form action="/action_page.php">
+                      <td><input type="submit" value="DONE"></td>
+                     </form>
+                     <!-- As above, how is this working and where is it going?-->
+                     <form action="/action_page.php">
+                      <td><input type="submit" value="DELETE"></td>
+                     </form>
+                      </b>
+                </tr>
         </table>
 
     </body>
