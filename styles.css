@@ -1,0 +1,58 @@
+/* This is used to set up overall h1 heading styles in your webpage */
+h1 {
+    color:white;
+    font-family: Courier, monospace;
+}
+h3 {
+    color:dark white;
+    font-family: Courier, monospace;
+}
+/* Style the font family for the whole page like this */
+body {
+    background-color: grey;
+    font-family: Courier, monospace;
+    color:white;
+}
+/* This is how to set a particular identified heading 
+how you want it to look; it will override the original 
+style setting. ALWAYS USE # SIGN TO SELECT ID ATTRIBUTES */
+#heading {
+    color:black;
+}
+/* This is how you create a CLASS that is used to 
+define colours for a particular set of stuff*/
+.task-row {
+    color: orange;
+}
+/* This uses an ID to overwrite an individual instance 
+of a CLASS*/
+#second-row {
+    color: purple;
+    text-decoration: line-through;
+    /* display:none; */
+} 
+/* How to Define Your DIV stuff */
+#div1 {
+    border: 3px solid white;
+    font: bold;
+    margin: 10px auto 0 auto;
+    padding: 20px;
+    width:400px;
+    text-align: center;
+}
+#div2 {
+    border: 2px solid red;
+    width: 300px;
+}
+
+/* This sets up the SPAN class */
+.my-span{
+    border: 2px solid white;
+}
+.my-div{
+    border: 2px solid white;
+    font: bold;
+    margin: 10px auto 0 auto ;
+    width:400px;
+    text-align: center;
+}
