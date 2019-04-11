@@ -56,3 +56,31 @@ of a CLASS*/
     width:400px;
     text-align: center;
 }
+/* This text will change your background colour dependent on 
+whether or not the screen size goes up to 600pixels */
+@media only screen and (max-width: 600px){
+    body {
+        background-color:pink;
+    }
+    /* This changes how a particular div section looks */
+    #div1 {
+        background-color:white;
+        color: black;
+    }
+}
+/*  This text will change your background colour dependent on 
+whether or not the screen size goes up to 400pixels*/
+@media only screen and (max-width: 400px){
+    body {
+        background-color:green;
+    }
+    
+}
+
+/* This text will change your background colour dependent on 
+whether or not the screen size goes up to 200pixels */
+@media only screen and (max-width: 200px){
+    body {
+        background-color:light-blue;;
+    }
+}
