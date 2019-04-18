@@ -1,0 +1,107 @@
+<html>
+
+<head>
+<!-- This is from bootstrap to help you create great CSS 
+styled documents-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Portia's My To Do Application</title>
+    <!-- This is how you link to a SEPARATE STYLE SHEET 
+        that formats your page -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        /* If you don't use a separate style sheet file 
+        you can set your styles in the main head tag here
+        h1 {
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- DIVs are BLOCK LEVEL ELEMENTS 
+        They are POSITIONAL ELEMENTS that help to determine where stuff is
+        They are used in place of things like TABLES as they are easier to 
+        use when differentiating between devices etc -->
+    <!-- <This is how you can individually style a heading if 
+        you want it different to the overall style definition 
+        h1 style="color: red; font-family: 'Courier New', Courier, monospace;">My ToDo Application</h1> -->
+    <div class="my-div">
+        <h1><b>My To Do Application</b></h1>
+     </div>
+    <br>
+    <p>
+        <div id="div1" >
+            <h3><b>Please Enter a Task</b></h3>
+                <form>
+                    <input type="text" name="Task input box" value="">
+                    <input type="submit" value="ADD">
+                </form>
+        </div> 
+    </p>
+
+
+    <!-- SPAN tags only take up the amount of space needed 
+        to hold whatever the content is -->
+    <!-- <span class="my_span">
+      Just Checking
+  </span>  
+  <span class="my-span">
+      Some more Text
+  </span>
+  <span class="my-span">
+      Even more Span Text to Try
+  </span> -->
+    <!-- Im unsure about this form tag which doesn't seem to show where and how are
+            the choices being made here passed to anywhere -->
+
+    <br>
+    <p>
+        <div id="div1">
+            <h4><b>THINGS TO DO: 2</b></h4>
+                <p>A FIRST TASK
+                    <input type="submit" value="DONE">
+                    <input type="submit" value="DELETE">
+                </p>
+                <p>A SECOND TASK
+                    <input type="submit" value="DONE">
+                    <input type="submit" value="DELETE">
+                </p>
+            </b></div>
+    </p>
+
+    <!-- Ignore the table stuff now as using DIV tags instead -->
+    <!-- People tend to use CLASS even when there 
+            is just one as it helps to reduce errors -->
+    <!-- <table>
+        <tr class="task-row">
+            <td><b>A FIRST TASK</b></td>
+             As above, how is this working and how is it functioning?
+            <form>
+                    <input type="submit" value="DONE">
+                    </form>
+            As above, how is this working and how is it functioning?
+            <form>
+                <td><input type="submit" value="DELETE"></td>
+            </form>
+        </tr>
+        <tr class="task-row">
+            <b>
+                 This code here overwrites the CLASS by setting it 
+                    with an ID
+                <td id="second-row" class="task-row">A SECOND TASK</td>
+                <td><input type="submit" value="DONE"></td>
+                </form>
+                 As above, how is this working and how is it functioning?
+                <form>
+                    <td><input type="submit" value="DELETE"></td>
+                </form>
+            </b>
+        </tr>
+    </table> -->
+
+</body>
+
+</html>

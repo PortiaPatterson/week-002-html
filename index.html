@@ -1,6 +1,10 @@
 <html>
 
 <head>
+<!-- This is from bootstrap to help you create great CSS 
+styled documents-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Portia's My To Do Application</title>
     <!-- This is how you link to a SEPARATE STYLE SHEET 
         that formats your page -->
@@ -13,91 +17,59 @@
             color: green;
             font-family: 'Courier New', Courier, monospace;
         } */
+     /* This resizes your images depending on screen size */
+        img{
+            width:100%;
+        }
     </style>
 </head>
 
 <body>
-    <!-- DIVs are BLOCK LEVEL ELEMENTS 
-        They are POSITIONAL ELEMENTS that help to determine where stuff is
-        They are used in place of things like TABLES as they are easier to 
-        use when differentiating between devices etc -->
+    <!-- The code below uses a grid-like design; it's based on Bootstrap & uses Containers, Rows & Columns-->
+    <!-- We put in col sizes to determine how the page views depending on size -->
+
+    <!-- DIVs are BLOCK LEVEL ELEMENTS, they are POSITIONAL ELEMENTS that help to place stuff they are 
+        used in place of things like tables as they are easier to differentiate between devices 
+        they can also help determine how content will look etc -->
+
     <!-- <This is how you can individually style a heading if 
         you want it different to the overall style definition 
         h1 style="color: red; font-family: 'Courier New', Courier, monospace;">My ToDo Application</h1> -->
-    <div id="div1" class="my-div">
-        <h1>My To Do Application</h1>
+    
+    <div id = "div1">
+      <div class="container">
+            <div class="row div2">
+              <div class="col-sm-12">
+                <h1><b>My To Do Application</b></h1>
+              </div>
+            </div>
+            <div class="row div2">
+              <div class="col-sm-12">
+                <h3>Please Enter a Task</h3>
+                  <form>
+                   <input type="text" name="Task input box" value="">
+                   <input type="submit" value="ADD">
+                  </form>
+              </div>
+            </div>
+            <div class="row div2">
+              <div class="col-sm-12">
+                <h4>THINGS TO DO: 2</h4>
+              </div>
+            </div>
+            <div class="row div2">
+              <div class="col-sm-12">
+                <p><b>A FIRST TASK</b>
+                  <input type="submit" value="DONE">
+                  <input type="submit" value="DELETE">
+                </p>
+                <p><b>A SECOND TASK</b>
+                  <input type="submit" value="DONE">
+                  <input type="submit" value="DELETE">
+                </p> 
+      </div>
     </div>
-    <br>
-    <p>
-        <div id="div1" class="my-div">
-            <h3>Please Enter a Task</h2>
-                <form>
-                    <input type="text" name="Task input box" value="">
-                    <input type="submit" value="ADD">
-                </form>
-        </div>
-    </p>
-
-
-    <!-- SPAN tags only take up the amount of space needed 
-        to hold whatever the content is -->
-    <!-- <span class="my_span">
-      Just Checking
-  </span>  
-  <span class="my-span">
-      Some more Text
-  </span>
-  <span class="my-span">
-      Even more Span Text to Try
-  </span> -->
-    <!-- Im unsure about this form tag which doesn't seem to show where and how are
-            the choices being made here passed to anywhere -->
-
-    <br>
-    <p>
-        <div id="div1" class="my-div">
-            <b>THINGS TO DO: 2
-                <p>A FIRST TASK
-                    <input type="submit" value="DONE">
-                    <input type="submit" value="DELETE">
-                </p>
-                <p>A SECOND TASK
-                    <input type="submit" value="DONE">
-                    <input type="submit" value="DELETE">
-                </p>
-            </b></div>
-    </p>
-
-    <!-- Ignore the table stuff now as using DIV tags instead -->
-    <!-- People tend to use CLASS even when there 
-            is just one as it helps to reduce errors -->
-    <!-- <table>
-        <tr class="task-row">
-            <td><b>A FIRST TASK</b></td>
-             As above, how is this working and how is it functioning?
-            <form>
-                    <input type="submit" value="DONE">
-                    </form>
-            As above, how is this working and how is it functioning?
-            <form>
-                <td><input type="submit" value="DELETE"></td>
-            </form>
-        </tr>
-        <tr class="task-row">
-            <b>
-                 This code here overwrites the CLASS by setting it 
-                    with an ID
-                <td id="second-row" class="task-row">A SECOND TASK</td>
-                <td><input type="submit" value="DONE"></td>
-                </form>
-                 As above, how is this working and how is it functioning?
-                <form>
-                    <td><input type="submit" value="DELETE"></td>
-                </form>
-            </b>
-        </tr>
-    </table> -->
-
+    
 </body>
 
 </html>
